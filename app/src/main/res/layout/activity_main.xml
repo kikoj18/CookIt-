@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/fondoaplicacion1"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/boton_usuario"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="396dp"
+        android:background="@color/HeaderTitulo"
+        android:onClick="regUser"
+        android:text="@string/boton_usuario"
+        android:textColor="@color/blanco"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boton_invitado"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="444dp"
+        android:background="@color/HeaderTitulo"
+        android:onClick="invitado"
+        android:text="@string/boton_invitado"
+        android:textColor="@color/blanco"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnMute"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:background="@color/Transparente"
+        android:onClick="mute"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode" />
+
+    <ImageView
+        android:id="@+id/logo_main"
+        android:layout_width="289dp"
+        android:layout_height="301dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329"
+        app:srcCompat="@drawable/logomain" />
+
+    <Button
+        android:id="@+id/boton_comenzar_main"
+        android:layout_width="131dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/HeaderTitulo"
+        android:onClick="start"
+        android:text="Comenzar"
+        android:textColor="@color/blanco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_main" />
+
+</android.support.constraint.ConstraintLayout>
